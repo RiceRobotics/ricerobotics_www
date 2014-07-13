@@ -8,12 +8,12 @@ a:link {color:1045f9;text-decoration:none;}      /* unvisited link */
 a:visited {color:1045f9;text-decoration:none;}  /* visited link */
 a:hover {color:95acfc;text-decoration:none;}  /* mouse over link */
 a:active {color:95acfc;text-decoration:none;}
+
 	
 * {
 	margin: 0;
 	padding: 0;
 }
-
 
 #header
 {
@@ -35,6 +35,7 @@ a:active {color:95acfc;text-decoration:none;}
 	margin-bottom:5%;
 }
 
+
 #paragraph
 {
 	margin-top: 2%;
@@ -45,7 +46,7 @@ a:active {color:95acfc;text-decoration:none;}
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 300;
 	font-size: 16;
-	text-align: center;	
+	text-align: center;
 }
 
 #member

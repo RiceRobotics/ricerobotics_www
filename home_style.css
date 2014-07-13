@@ -8,20 +8,180 @@ a:link {color:1045f9;text-decoration:none;}      /* unvisited link */
 a:visited {color:1045f9;text-decoration:none;}  /* visited link */
 a:hover {color:95acfc;text-decoration:none;}  /* mouse over link */
 a:active {color:95acfc;text-decoration:none;}
-	
+
+
+/*#### ANIMATIONS ####*/
+
+
+
+/* slideUp */
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;			
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0%);
+		opacity: 1;
+	}	
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+
+/* linksSlideUp */
+
+.linksSlideUp{
+	animation-name: linksSlideUp;
+	-webkit-animation-name: linksSlideUp;	
+
+	animation-duration: 2s;	
+	-webkit-animation-duration: 2s;
+
+	animation-timing-function: linear;	
+	-webkit-animation-timing-function: linear;
+
+	visibility: visible !important;			
+}
+
+@keyframes linksSlideUp {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	50%{
+		transform: translateY(0%);
+		opacity: 0;
+	}
+	70%{
+		transform: translateY(0%);
+		opacity: 1;
+	}	
+}
+
+@-webkit-keyframes linksSlideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+		opacity: 0;
+	}
+	10%{
+		-webkit-transform: translateY(0%);
+		opacity: 0;
+	}
+	20%{
+		-webkit-transform: translateY(0%);
+		opacity: 0;
+	}
+	30%{
+		-webkit-transform: translateY(0%);
+		opacity: 0;
+	}
+	40%{
+		-webkit-transform: translateY(0%);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
+/* appear */
+
+.appear{
+	animation-name: appear;
+	-webkit-animation-name: appear;	
+
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
+
+	animation-timing-function: linear;	
+	-webkit-animation-timing-function: linear;
+
+	visibility: visible !important;			
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}	
+}
+
+@-webkit-keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	80%{
+		opacity: 1;
+	}
+}
+
+
+/*#### End Animations ####*/
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
-
 #header
 {
-	margin-top:5%;
+	padding-top:5%;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
-	font-size: 60;
+	font-size: 64;
 	text-align: center;
+	visibility: hidden;
 }
 
 
@@ -33,6 +193,11 @@ a:active {color:95acfc;text-decoration:none;}
 	font-size: 20;
 	text-align: center;	
 	margin-bottom:5%;
+	visibility: hidden;
+}
+
+#lines{
+	visibility: hidden;
 }
 
 #paragraph
@@ -45,7 +210,8 @@ a:active {color:95acfc;text-decoration:none;}
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 300;
 	font-size: 16;
-	text-align: justify;	
+	text-align: justify;
+	visibility: hidden;	
 }
 
 #footer
@@ -56,4 +222,7 @@ a:active {color:95acfc;text-decoration:none;}
 	font-weight: 300;
 	font-size: 20;
 	text-align: center;	
+	visibility: hidden;
 }
+
+
