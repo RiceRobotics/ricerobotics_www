@@ -1,0 +1,70 @@
+
+
+/*Fonts*/
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto Slab', serif; */
+
+a:link {color:1045f9;text-decoration:none;}      /* unvisited link */
+a:visited {color:1045f9;text-decoration:none;}  /* visited link */
+a:hover {color:95acfc;text-decoration:none;}  /* mouse over link */
+a:active {color:95acfc;text-decoration:none;}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header
+{
+	padding-top:5%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 64;
+	text-align: center;
+}
+
+
+#pages
+{
+	margin-top: 1%;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 200;
+	font-size: 20;
+	text-align: center;	
+	margin-bottom:5%;
+}
+
+#lines{
+}
+
+
+#paragraph
+{
+	margin-top: 2%;
+	margin-bottom:2%;
+	margin-left:25%;
+	margin-right:25%;
+	width:50%;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
+	font-size: 16;
+	text-align: justify;
+}
+
+#paragraph img
+{
+	margin-right: 2%;
+}
+
+#footer
+{
+	margin-top:5%;
+	margin-bottom:1%;
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: 300;
+	font-size: 20;
+	text-align: center;
+}
+
+
