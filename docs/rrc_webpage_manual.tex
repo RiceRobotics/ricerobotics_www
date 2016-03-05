@@ -1,31 +1,72 @@
 \documentclass{article}
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
-\usepackage{setspace}
-\usepackage{fancyhdr}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
 
+\setlength\parindent{0pt}
 
 \begin{document}
-    \pagestyle{fancy}
-    \lhead{}
-    \chead{}
-    \rhead{}
-
     \title{Rice Robotics Club - Website Manual}
-    \author{Prudhvi Boyapalli}
+    \author{\url{robotics.rice.edu}}
+    \date{}
+
 
     \maketitle
     \begin{center}
         \vfill
-        \includegraphics[scale=0.07]{blackowl.jpg}
+        \includegraphics[scale=0.25]{../home_images/rice/blackowl.jpg}
         \vfill
-        \large{Last updated: \textbf{\today}}
+        Last updated: \textbf{\today}\\
+
+        For any questions, contact Prudhvi Boyapalli
+    (prb2@rice.edu / prrb02@gmail.com).
     \end{center}
 
     \newpage
 
-    \section{Hosting}
-    \label{sec:Hosting}
+    \section{Obtaining the Source Code}
+    \label{sec:Obtaining the Source Code}
+    All of the website code is a repository in the club's GitHub account:\\
+
+    \url{https://github.com/RiceRobotics/ricerobotics_www}\\
+
+    You can download all the files using the ``Download ZIP'' button on the page,
+    or if you're familiar with Git, you can checkout the repository from the command line
+    using: \begin{verbatim}git checkout https://github.com/RiceRobotics/ricerobotics_www.git\end{verbatim}
+
+    \section{Making Changes}
+    \label{sec:Making Changes}
+    Once you have the files on your machine, you can edit the \texttt{HTML}
+    files in the repository to make changes to the website. Each page of the
+    site has a corresponding file in the repo and the \texttt{CSS} styles for
+    the pages are in the \texttt{page\_style.css} file.\\
+
+    Once you're satisfied with the changes, be sure the to update the repo with
+    the latest code, either by committing and pushing the code using Git, or
+    making the edits directly on GitHub.
+
+    \section{Publishing Changes to the Website}
+    \label{sec:Publishing Changes to the Website}
+    When you have the files ready, they will need to be updated on Rice's web
+    server for the changes to be updated on \url{robotics.rice.edu}. Before you
+    can do this, you'll need to obtain permission that authorizes your NetID
+    for accessing the server.  To get this permission, you will need to contact
+    Rice IT (\texttt{helpdesk@rice.edu}) and ask them to add your NetID to the
+    ADRICE group: \texttt{SRE\_StudentActivites\_Students\_Robotics}.  Once you
+    have access, you will need to move the files over onto the server using
+    \texttt{FTP}.  The instructions for doing this are here:
+    \url{https://docs.rice.edu/confluence/pages/viewpage.action?pageId=16712247}.\\
+
+    Once you've setup and mounted the drive, copy over the modified files to
+    replace the ones that are already there. Once this is done, the changes
+    will be visible on the website.
 
 \end{document}
